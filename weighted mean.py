@@ -1,4 +1,4 @@
-
+# way 1
 num=int(input("Lenght of array"))
 a=list(map(int,input().split()))
 b=list(map(int,input().split()))
@@ -12,9 +12,11 @@ def weighted_mean():
 
 weighted_mean()
 
-#
-N = map(int,input().split())
-X = list(map(int, input().strip().split(' ')))
-W = list(map(int, input().strip().split(' ')))
-sum_X = sum([a*b for a,b in zip(X,W)])
-print(round((sum_X/sum(W)),1))
+# way 2 
+num=int(input())
+a=list(map(float,input().split()))
+b=list(map(float,input().split()))
+#sum 
+sum_up=sum([a*b for a,b in zip(a,b)])
+weighted_mean=round(sum_up/sum(b),1)
+print(weighted_mean)
